@@ -1,0 +1,9 @@
+#!/bin/sh
+#SBATCH --mem-per-cpu=1024
+#SBATCH --time=00:30:00
+#SBATCH --job-name=Scheelupper
+#SBATCH --error=Fortran.err
+#SBATCH --output=Fortran.out
+ 
+module load compiler/gcc/4.9 
+./test.x
